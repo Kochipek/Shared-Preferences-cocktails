@@ -1,0 +1,25 @@
+
+D
+app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
+@
+build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
+z
+Japp/src/main/java/com/example/myapplication/data/model/CocktailResponse.kt,d/a/daccfc4278fb368fd8ff5eaed1e49844750438c7
+w
+Gapp/src/main/java/com/example/myapplication/data/model/CocktailModel.kt,8/5/855a865aeabab451335fb3b373495d93b78c4813
+w
+Gapp/src/main/java/com/example/myapplication/data/service/CocktailAPI.kt,4/d/4d6d3cbd721b5ed4c88d091661ca14b3797cf7a8
+v
+Fapp/src/main/java/com/example/myapplication/data/service/ApiService.kt,b/a/ba6d987df7db69e2a7c367cd6f27efc0638c83b0
+n
+>app/src/main/java/com/example/myapplication/Utils/Constants.kt,b/5/b5b3d98e355a15b79290a4abb023e57e30bf2fb6
+k
+;app/src/main/java/com/example/myapplication/ui/vm/FeedVm.kt,d/d/dddab7653f45d0ded95541d8e2f70e256363263b
+n
+>app/src/main/java/com/example/myapplication/ui/FeedFragment.kt,5/e/5e3de9e888236b0f66e0b122549594b02df62151
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+u
+Eapp/src/main/java/com/example/myapplication/ui/adapter/FeedAdapter.kt,9/f/9fd149804883048e7afca014b84072bd003584a6
+A
+gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
