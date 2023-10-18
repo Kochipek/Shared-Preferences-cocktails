@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.myapplication"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -44,19 +44,23 @@ android {
 
 val navVersion = "2.7.4"
 dependencies {
+    implementation ("androidx.preference:preference-ktx:1.2.1")
+
     implementation("androidx.navigation:navigation-common:2.7.4")
     implementation("androidx.multidex:multidex:2.0.1")
     // navigation
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
     //coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     //coroutine lifecycle scopes
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation ("android.arch.lifecycle:extensions:1.1.1")
-    implementation ("android.arch.lifecycle:viewmodel:1.1.1")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+
     // gson
     implementation ("com.google.code.gson:gson:2.10.1")
     //retrofit

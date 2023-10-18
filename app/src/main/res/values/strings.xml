@@ -2,7 +2,10 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="selam">selam</string>
-    <string name="hey">hey</string>
     <string name="cocktail_title">Cocktail Title</string>
+    <string name="description">Description</string>
+    <string name="cocktails">Cocktails</string>
+    <string name="favorites"> Favorites </string>
+    <string name="Cocktails">Cocktails</string>
+    <string name="Home">Home\n</string>
 </resources>

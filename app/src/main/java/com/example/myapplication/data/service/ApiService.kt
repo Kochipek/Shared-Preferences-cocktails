@@ -14,7 +14,8 @@ class ApiService {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
-        val api: CocktailAPI by lazy{
+        val api: CocktailAPI by lazy {
             retrofit.create(CocktailAPI::class.java)
         }
-    }}
+    }
+}

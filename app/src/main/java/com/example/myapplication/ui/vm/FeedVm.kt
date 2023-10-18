@@ -11,13 +11,13 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class FeedVm : ViewModel() {
-   var cocktailList = MutableLiveData<List<CocktailModel>>()
+    var cocktailList = MutableLiveData<List<CocktailModel>>()
 
     fun getData() {
         CoroutineScope(Dispatchers.IO).launch {
             val response = ApiService.api.getCocktails()
             withContext(Dispatchers.Main) {
-                if(response.isSuccessful) {
+                if (response.isSuccessful) {
                     cocktailList.value = response.body()?.drinks
                 }
             }
