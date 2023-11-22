@@ -9,7 +9,6 @@ class SharedPrefs(context: Context) {
     private val preferences: SharedPreferences? =
         context.getSharedPreferences("FavoriteStatus", Context.MODE_PRIVATE)
 
-
     fun addFavorite(cocktail: CocktailModel) {
         val favorites = getFavorites()
         favorites.add(cocktail)
@@ -22,6 +21,8 @@ class SharedPrefs(context: Context) {
         saveFavorites(favorites)
     }
 
+    // defvalue is the default value if the key is not found in the shared preferences
+    // in this case, we are returning an empty list if the key is not found
     fun getFavorites(): MutableList<CocktailModel> {
         val json = preferences?.getString("favorites", "[]")
         val favorites = Gson().fromJson(json, Array<CocktailModel>::class.java)

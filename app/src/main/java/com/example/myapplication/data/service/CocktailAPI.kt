@@ -6,9 +6,6 @@ import retrofit2.http.GET
 
 interface CocktailAPI {
 
-    // endpointi aldim
     @GET("filter.php?c=Cocktail")
-    // suspend function olmasinin sebebi coroutine kullanacagimiz icin
     suspend fun getCocktails(): Response<CocktailResponse>
-
 }

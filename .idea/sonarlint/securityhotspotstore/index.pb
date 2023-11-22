@@ -23,8 +23,6 @@ u
 Eapp/src/main/java/com/example/myapplication/ui/adapter/FeedAdapter.kt,9\f\9fd149804883048e7afca014b84072bd003584a6
 A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
-t
-Dapp/src/main/java/com/example/myapplication/ui/FavouritesFragment.kt,3\a\3a3745ac7048eed16b724ed5afcb13d9627a8f57
 n
 >app/src/main/java/com/example/myapplication/ui/MainActivity.kt,1\2\1235e1a41d4eb4377bf5aebde25ed4939eb2e156
 j
@@ -37,3 +35,11 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 C
 settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850
+s
+Capp/src/main/java/com/example/myapplication/ui/FavoritesFragment.kt,8\8\88fa1229a561df23bc799c2fbe53f23a9481cb66
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

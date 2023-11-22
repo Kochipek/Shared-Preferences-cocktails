@@ -21,12 +21,10 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
         sharedPrefs = SharedPrefs(requireContext())
         binding = FragmentFeedBinding.bind(view)
         viewModel = androidx.lifecycle.ViewModelProvider(this).get(FeedVm::class.java)
-        // get data from viewModel coroutine
         viewModel.getData()
         binding.cocktailList.adapter = adapter
         binding.cocktailList.layoutManager = LinearLayoutManager(context)
         observeLiveData()
-
     }
 
     private fun observeLiveData() {
