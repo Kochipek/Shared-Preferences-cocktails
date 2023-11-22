@@ -21,8 +21,6 @@ This is a simple Android app that demonstrates the Model-View-ViewModel (MVVM) a
 |<img src="Screenshot_20231122_231243.png" width="250" height="500"/>|<img src="Screenshot_20231122_231319.png" width="250" height="500"/>|
 
 </br>
-![Screenshot 2023-10-18 174348](https://github.com/Kochipek/CocktailsApp/assets/52817694/8740cd60-5315-496b-ba48-53972c7218cf)
-
 
 ## Libraries Used
 - Coroutines for managing asynchronous tasks.
