@@ -3,6 +3,40 @@
 
 This is a simple Android app that demonstrates the Model-View-ViewModel (MVVM) architectural pattern while using Coroutines and Retrofit to fetch and display data from TheCocktailDB API, and sharedPreferences.
 
+### Shared Prefs Example
+```kt
+
+class SharedPrefs(context: Context) {
+    private val preferences: SharedPreferences? =
+        context.getSharedPreferences("FavoriteStatus", Context.MODE_PRIVATE)
+
+    fun addFavorite(cocktail: CocktailModel) {
+        val favorites = getFavorites()
+        favorites.add(cocktail)
+        saveFavorites(favorites)
+    }
+
+    fun removeFavorite(cocktail: CocktailModel) {
+        val favorites = getFavorites()
+        favorites.remove(cocktail)
+        saveFavorites(favorites)
+    }
+
+    // defvalue is the default value if the key is not found in the shared preferences
+    // in this case, we are returning an empty list if the key is not found
+    fun getFavorites(): MutableList<CocktailModel> {
+        val json = preferences?.getString("favorites", "[]")
+        val favorites = Gson().fromJson(json, Array<CocktailModel>::class.java)
+        return favorites?.toMutableList() ?: mutableListOf()
+    }
+
+    private fun saveFavorites(favorites: List<CocktailModel>) {
+        val json = Gson().toJson(favorites)
+        preferences?.edit()?.putString("favorites", json)?.apply()
+    }
+}
+```
+
 ## Features
 - Get favorite cocktail list from shared preferences.
 - Fetches and displays a list of movies from the CocktailDB API.
